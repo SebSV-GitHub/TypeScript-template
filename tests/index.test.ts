@@ -1,8 +1,8 @@
-import greet from "@/core/index.js";
+import test from "ava";
+import x from "#src/modules/surprise.js";
 
-describe("Index", () => {
-	test("True", () => {
-		const string_ = greet("World");
-		expect(true).toBe(true);
-	});
+const function_ = () => "foo";
+
+test("fn() returns foo", (t) => {
+	t.is(function_(), "foo");
 });

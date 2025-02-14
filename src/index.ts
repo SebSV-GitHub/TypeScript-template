@@ -1,3 +1,3 @@
-import greet from "@/core/index.js";
+import messageFromTheFuture from "#src/modules/surprise.js";
 
-console.log(greet("World"));
+await messageFromTheFuture("Seb");
