@@ -1,4 +1,4 @@
-import greet from "#src/core/greet.js";
+import greet from "#core/greet.js";
 
 async function messageFromTheFuture(name: string) {
 	return new Promise<void>((resolve) => {

@@ -1,3 +1,3 @@
-import messageFromTheFuture from "#src/modules/surprise.js";
+import messageFromTheFuture from "#modules/surprise.js";
 
 await messageFromTheFuture("Seb");
