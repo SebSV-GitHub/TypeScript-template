@@ -12,7 +12,7 @@
 		}
 	},
 	"scripts": {
-		"test": "TSX_TSCONFIG_PATH=./tests/tsconfig.json ava",
+		"test": "TSX_TSCONFIG_PATH=./tests/tsconfig.json c8 ava",
 		"start": "node dist/index.js",
 		"dev": "tsx --env-file=.env --conditions=development src/index.ts",
 		"watch": "tsx --env-file=.env --conditions=development --watch src/index.ts",
@@ -58,6 +58,13 @@
 		"nodeArguments": [
 			"--import=tsx",
 			"--conditions=testing"
+		]
+	},
+	"c8": {
+		"reporter": [
+			"html",
+			"text",
+			"text-summary"
 		]
 	},
 	"dependencies": {

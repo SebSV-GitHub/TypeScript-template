@@ -1,8 +1,7 @@
 import test from "ava";
-import x from "#src/modules/surprise.js";
+import chalk from "chalk";
+import greet from "#src/core/greet.js";
 
-const function_ = () => "foo";
-
-test("fn() returns foo", (t) => {
-	t.is(function_(), "foo");
+test("Greet", (t) => {
+	t.is(greet("Seb"), `Hello, ${chalk.bgHex("#23F0C7")("Seb")}!`);
 });
