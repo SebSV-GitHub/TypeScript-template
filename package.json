@@ -48,25 +48,6 @@
 		"typescript": "^5.6.3",
 		"xo": "^0.59.3"
 	},
-	"ava": {
-		"extensions": [
-			"ts"
-		],
-		"files": [
-			"tests/**/*.test.ts"
-		],
-		"nodeArguments": [
-			"--import=tsx",
-			"--conditions=testing"
-		]
-	},
-	"c8": {
-		"reporter": [
-			"html",
-			"text",
-			"text-summary"
-		]
-	},
 	"dependencies": {
 		"chalk": "^5.4.1"
 	}
